@@ -1,2 +1,2 @@
 # Objektno-orijentisane-tehnologije
-Projekat
+Projekat iz predmeta OOT
