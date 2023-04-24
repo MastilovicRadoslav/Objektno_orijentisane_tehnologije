@@ -1,0 +1,45 @@
+﻿<Window x:Class="Projekat.IzmeniZaposlenog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat"
+        mc:Ignorable="d"
+        Title="IzmeniZaposlenog" Height="290" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1.2*"/>
+
+        </Grid.RowDefinitions>
+        <TextBlock Text="Izmeni zaposlenog" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="0" Margin="0 5 0 0" FontSize="20" FontWeight="Bold" />
+        <TextBlock Text="Jmbg:"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Top"/>
+        <TextBlock Text="Ime:"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" />
+        <TextBlock Text="Prezime:"  Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" />
+        <TextBlock Text="Pol:"   Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" />
+        <TextBlock Text="Datum rodjenja:"   Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" />
+        <TextBlock Text="Slika:"   Grid.Row="6" Grid.Column="1" VerticalAlignment="Top" />
+        <TextBox x:Name="tbJmbg"  IsReadOnly="True"  Padding ="2" Grid.Row="1"  Grid.Column="2" VerticalAlignment="Top" Margin="0 0 0 3"/>
+        <TextBox x:Name="tbIme"  Padding ="2" Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" TextWrapping="Wrap" Margin="0 0 0 3"/>
+        <TextBox x:Name="tbPrezime"  Padding ="2" Grid.Row="3" Grid.Column="2" VerticalAlignment="Top" TextWrapping="Wrap" Margin="0 0 0 3"/>
+        <ComboBox x:Name="tbPol"  Padding ="3" Grid.Row="4" Grid.Column="2" VerticalAlignment="Top">
+            <ComboBoxItem>Musko</ComboBoxItem>
+            <ComboBoxItem>Zensko</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbDatumRodjenja" IsReadOnly="True"  Padding ="2" Grid.Row="5" Grid.Column="2"  VerticalAlignment="Top" Margin="0 0 0 3"/>
+        <TextBox x:Name="tbProfilnaSlika"  Padding ="2" Grid.Row="6" Grid.Column="2"  VerticalAlignment="Top" Margin="0 0 0 3"/>
+        <Button  x:Name="btnIzmeniZaposlenog" Click="btnIzmeniZaposlenog_Click"  HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="7" Grid.Column="2" Content="Izmeni" Width="100" FontSize="15" Margin="0 0 0 2"></Button>
+    </Grid>
+</Window>
